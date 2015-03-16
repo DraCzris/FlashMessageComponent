@@ -6,7 +6,7 @@
 		{ "name": "Tomáš Votruba", "homepage": "http://tomasvotruba.cz" }
 	],
 	"require": {
-		"php": ">=5.5",
+		"php": ">=5.4",
 		"nette/application": "~2.2",
 		"nette/robot-loader": "~2.2",
 		"latte/latte": "~2.2",

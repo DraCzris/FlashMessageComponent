@@ -30,9 +30,9 @@ class CreateComponentTest extends PHPUnit_Framework_TestCase
 	public function testFactory()
 	{
 		/** @var FlashMessageControlFactory $factory */
-		$factory = $this->container->getByType(FlashMessageControlFactory::class);
-		$this->assertInstanceOf(FlashMessageControlFactory::class, $factory);
-		$this->assertInstanceOf(FlashMessageControl::class, $factory->create());
+		$factory = $this->container->getByType('Zenify\FlashMessageComponent\FlashMessageControlFactory');
+		$this->assertInstanceOf('Zenify\FlashMessageComponent\FlashMessageControlFactory', $factory);
+		$this->assertInstanceOf('Zenify\FlashMessageComponent\FlashMessageControl', $factory->create());
 	}
 
 }

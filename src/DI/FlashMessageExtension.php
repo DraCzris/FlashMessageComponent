@@ -19,7 +19,7 @@ class FlashMessageExtension extends CompilerExtension
 		$builder = $this->getContainerBuilder();
 
 		$builder->addDefinition($this->prefix('flashMessageFactory'))
-			->setImplement(FlashMessageControlFactory::class);
+			->setImplement('Zenify\FlashMessageComponent\FlashMessageControlFactory');
 	}
 
 }
